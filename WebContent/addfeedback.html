@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Feedback</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- ======================================================= 
+    Author: Thirumurugan
+    Author URL: http://www.thirumurugan.cf/
+  ======================================================= -->
+</head>
+
+<body>
+<!--Feature-->
+  <section id="feature" class="section-padding form-background-section">
+    <div class="container form-background-row">
+      <div class="row form-background">
+        <div class="header-section text-center">
+          <h2>Interview Feedback </h2>
+          <p>Share your interview experience here.It will helpful to you in the way of keep and tracking yourself.</p>
+          <hr class="bottom-line">
+        </div>
+        <form  action="./AddFeedbackServlet" method="get" role="form" class="contactForm">
+          <div class="col-md-6 col-sm-6 col-xs-12 left">
+
+            <label for="companyname">Company Name<span><sup class="astric">*</sup></span>:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-building"></i></span>
+              <input type="text" name="cname" class="form-control form input-lg" id="name" placeholder="Company Name"/>
+            </div>
+            <br>
+
+            <label for="interviewdate">Interview Date<span><sup class="astric">*</sup></span>:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-calendar"></i></span></i>
+              <input type="date" name="idate" class="form-control form input-lg" id="date" placeholder="Date"/>
+            </div>
+            <br>
+
+            <label for="place">Place / Area<span><sup class="astric">*</sup></span>:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+              <input type="text" name="place" class="form-control form input-lg" id="name" placeholder="Area / Place Name"/>
+            </div>
+            <br>
+
+            <label for="city">City<span><sup class="astric">*</sup></span>:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+              <input type="text" name="city" class="form-control form input-lg" id="name" placeholder="City Name"/>
+            </div>
+            <br>
+
+            <label for="rounds">Rounds<span><sup class="astric">*</sup></span>:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-edit"></i></span>
+            <select class="input-lg" style="border-radius: 0px 5px 5px 0px" id="select" name="rounds"> 
+                <option selected>How Many Rounds ? </option> 
+                <option value="1">1</option> 
+                <option value="2">2</option> 
+                <option value="3">3</option>
+                <option value="4">4</option> 
+            </select> 
+            </div>
+            <br>
+
+            <label for="1stround">1st round:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+            <select class="input-lg" style="border-radius: 0px 5px 5px 0px" id="select" name="firstround"> 
+                <option selected>None</option> 
+                <option value="Technical">Technical</option> 
+                <option value="Technical Written">Technical Written</option> 
+                <option value="Programming">Programming</option>
+                <option value="Technical F2F">Technical F2F</option>
+                <option value="Technical 2nd round F2F">Technical 2nd round F2F </option>
+                <option value="Group Discussion">Group Discussion</option>
+                <option value="HR Discussion">HR Discussion</option> 
+                <option value="Aptitude">Aptitude</option>
+            </select> 
+            </div>
+            <br>
+
+            <div class="form-group">
+              <textarea class="form-control" name="firstroundmessage" rows="4" placeholder="What they Ask ?"></textarea>
+              <div class="validation"></div>
+            </div>
+            <!------END LEFT FORM PORTION-->
+          </div>
+
+          <!---START RIGHT FORM PORTION-->
+          <div class="col-md-6 col-sm-6 col-xs-12 right">
+            <label for="2ndround">2nd round:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+            <select class="input-lg" style="border-radius: 0px 5px 5px 0px" id="select" name="secondround"> 
+                <option selected>None</option> 
+                <option value="Technical">Technical</option> 
+                <option value="Technical Written">Technical Written</option> 
+                <option value="Programming">Programming</option>
+                <option value="Technical F2F">Technical F2F</option>
+                <option value="Technical 2nd round F2F">Technical 2nd round F2F </option>
+                <option value="Group Discussion">Group Discussion</option>
+                <option value="HR Discussion">HR Discussion</option> 
+                <option value="Aptitude">Aptitude</option>
+            </select> 
+            </div>
+            <br>
+            <div class="form-group">
+              <textarea class="form-control" name="secondroundmessage" rows="4" placeholder="What they Ask ?"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <label for="3rdround">3rd round:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+            <select class="input-lg" style="border-radius: 0px 5px 5px 0px" id="select" name="thirdround"> 
+                <option selected>None</option> 
+                <option value="Technical">Technical</option> 
+                <option value="Technical Written">Technical Written</option> 
+                <option value="Programming">Programming</option>
+                <option value="Technical F2F">Technical F2F</option>
+                <option value="Technical 2nd round F2F">Technical 2nd round F2F </option>
+                <option value="Group Discussion">Group Discussion</option>
+                <option value="HR Discussion">HR Discussion</option> 
+                <option value="Aptitude">Aptitude</option>
+            </select> 
+            </div>
+            <br>
+            <div class="form-group">
+              <textarea class="form-control" name="thirdroundmessage" rows="4" placeholder="What they Ask ?"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <label for="4thround">4th round:</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+            <select class="input-lg" style="border-radius: 0px 5px 5px 0px" id="select" name="fourthround"> 
+               <option selected>None</option> 
+                <option value="Technical">Technical</option> 
+                <option value="Technical Written">Technical Written</option> 
+                <option value="Programming">Programming</option>
+                <option value="Technical F2F">Technical F2F</option>
+                <option value="Technical 2nd round F2F">Technical 2nd round F2F </option>
+                <option value="Group Discussion">Group Discussion</option>
+                <option value="HR Discussion">HR Discussion</option> 
+                <option value="Aptitude">Aptitude</option>
+            </select> 
+            </div>
+            <br>
+            <div class="form-group">
+              <textarea class="form-control" name="fourthroundmessage" rows="4" placeholder="What they Ask ?"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <label for="improve">Need to Improve<span><sup class="astric">*</sup></span>:</label>
+            <div class="form-group">
+              <textarea class="form-control" name="improve" rows="4" placeholder="Which area you have to improve ?"></textarea>
+              <div class="validation"></div>
+            </div>
+            <br> 
+          </div>
+
+          <div class="col-xs-12">
+          <center>
+          <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SUBMIT</button>
+          <button type="reset" id="reset" name="reset" class="form contact-form-button light-form-button oswald light">RESET</button>
+          </center>
+          </div>
+
+        </form>
+        
+      </div>
+    </div>
+  </section>
+  <!--/ feature-->
+</body>
+</html>
